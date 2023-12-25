@@ -1,0 +1,344 @@
+@import "../../style.scss";
+
+$primary-color: #0366d6;
+$secondary-color: #d6e2f0;
+$light-bg: #f6f8fa;
+
+
+.Code {
+  position: relative;
+  display: inline-block;
+}
+
+.code-btn {
+  background-color: #2ea043;
+  color: #fff;
+  border: none;
+  padding: 8px 6px;
+  cursor: pointer;
+  width: 100px;
+  box-shadow: 0 0 transparent;
+}
+
+.download {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: -90%;
+  background-color: $textNeon;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #111923;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  z-index: 1;
+  margin-top: 10px;
+}
+
+th a {
+  text-decoration: none;
+  color: #9dacbd;
+  font-weight: 500;
+  background-color: #414666;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+th a:hover {
+  text-decoration: underline;
+}
+
+.zip {
+  padding: 8px 12px;
+  color: rgb(44, 0, 65);
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+}
+
+.zip:hover {
+  text-decoration: underline;
+}
+
+
+
+.branch-dropdown{
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+}
+
+.repo-sidebar {
+  width: 690px;
+
+}
+
+.file-upload-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px 0px;
+}
+
+.file-upload {
+  background-color: #25233d;
+  border: 1px solid $secondary-color;
+  border-radius: 5px;
+  padding: 20px;
+  width: 650px;
+  margin-bottom: 30px;
+  
+  
+  .drag-drop-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed $secondary-color;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    height: 300px;
+    
+
+    span {
+      color: $secondary-color;
+      font-size: 16px;
+    }
+
+    input {
+      display: none;
+    }
+  }
+
+  .select-files {
+    background-color: $bg;
+    color: $textBasic;
+    text-decoration: underline;
+  }
+
+  .file-list {
+    margin-top: 20px;
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        border: 1px solid $secondary-color;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        background-color: #25233d;
+
+        span {
+          margin-right: 10px;
+          color: $secondary-color;
+        }
+
+      }
+    }
+  }
+}
+
+.commit-section {
+  background-color: #25233d;
+  border: 1px solid $secondary-color;
+  border-radius: 5px;
+  padding: 20px;
+  width: 400px;
+  margin-left:80px ;
+
+  input {
+    
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid $secondary-color;
+    border-radius: 5px;
+    color: #f6f8fa;
+    font-family: $font;
+   
+  }
+
+  button {
+    background-color: $primary-color;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #1c4d86;
+  }
+}
+
+option {
+  background-color: #f6f8fa;
+}
+
+
+.repo-container {
+  display: flex;
+  justify-content: space-between;
+  //margin-top: 20px;
+  background-image: $bg;
+}
+
+.repo-main {
+  flex: 1 1;
+  margin-right: 0;
+  padding-left: 50px;
+}
+
+.repo-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-family: $font;
+  width: 60%;
+  font-size: 32px;
+  color: $textBasic;
+}
+
+.repo-header h2 {
+  margin-right: 0;
+  padding-right: 20px;
+}
+
+.public-badge {
+  padding: 5px 10px;
+  background-color: transparent;
+  color: $textSoft;
+  border: 1px solid $textSoft;
+  border-radius: 20px;
+  font-family: $font;
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.branch-dropdown {
+  margin-bottom: 10px;
+  font-family: $font;
+
+  color: white;
+  font-size: 30px;
+}
+
+.dropdown {
+  width: 60px;
+  height: 35px;
+  border-radius: 8px;
+  font-family: $font;
+  font-weight: 500;
+  background: #fff;
+}
+
+.files-list {
+  table {
+    width: 60%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+    border-radius: 20px;
+
+    th {
+      border: 1px solid $textSoft;
+      padding: 8px;
+      text-align: left;
+      font-family: $font;
+      font-size: 20px;
+      font-weight: lighter;
+      color: $textBasic;
+    }
+
+    td {
+      border: 1px solid $textSoft;
+      padding: 8px;
+      text-align: left;
+      font-family: $font;
+      color: $textSoft;
+    }
+
+    th {
+      background-color: $bgSoft;
+    }
+
+    tr:hover {
+      background-color: $bg;
+    }
+  }
+}
+
+
+.readme-container {
+  border: 1px solid $bg;
+  margin-top: 20px;
+  width: 60%;
+  border-radius: 20px;
+  background-color: $bgSoft;
+
+  .readme-header {
+    //background-color: $bgSoft;
+    padding: 10px;
+    border-bottom: 1px solid $textSoft;
+    font-family: $font;
+
+    h3 {
+      margin-bottom: 0;
+      //background-color: $bgSoft;
+      font-size: 24px;
+      color: $textBasic;
+    }
+  }
+
+  .readme-body {
+    padding: 20px;
+    //background-color: $bgSoft;
+
+    p {
+      font-family: $font;
+      //background-color: $bgSoft;
+      font-size: 18px;
+      color: $textSoft;
+    }
+  }
+}
+
+
+
+.about {
+  h3 {
+    margin-bottom: 10px;
+    font-size: 40px;
+    font-weight: bold;
+    color: $textBasic;
+  }
+
+  p {
+    font-size: 20px;
+    color: $textSoft;
+  }
+  padding-right: 200px;
+  font-family: $font;
+  margin-left: 0;
+}
+
+#submitBtn[disabled] {
+  opacity: 0.5; 
+  cursor: not-allowed;
+}
+
+#submitBtn:hover:not([disabled]) {
+  background-color: $textBasic;
+}
+
+.add-commit {
+  font-family: $font;
+}

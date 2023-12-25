@@ -1,0 +1,92 @@
+@import '../../style.scss';
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); // Semi-transparent black overlay
+    display: flex;
+    justify-content: center;
+    font-family: $font;
+    align-items: center;
+    z-index: 999; // Ensure the modal is above other content
+  }
+
+.repo-creation-modal {
+    background-color: rgba(48, 0, 87, 0.664); // Use the same background color as user-content
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px; // Adjust the width as needed
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  h2{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 4px;
+    font-weight: 300;
+  }
+  
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    color:rgba(19, 121, 44, 0.664);
+  }
+  
+  label {
+    color: #27E5FF;
+    font-size: 22px;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 90%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #464d57;
+    border-radius: 8px;
+    color: white;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  button {
+    width: 180px; // Adjust the width as needed
+    height: 40px; // Adjust the height as needed
+    background-color: #2ce05c;
+    font-family: $font;
+    font-size: 16px;
+    font-weight: bold;
+    color: $textBasic;
+    border: none;
+    border-radius: 8px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+
+  .cancel {
+    background-color: #e02c2c;
+  }
+
+  .cancel:hover {
+    background-color: darken(#e02c2c, 10%);
+  }
+  
+  .button:hover {
+    background-color: darken(#2ce05c, 10%);
+  }
+
+  .input-colour {
+    color: black;
+    font-weight: bold;
+  }

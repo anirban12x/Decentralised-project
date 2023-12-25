@@ -1,0 +1,76 @@
+@import "../../style.scss";
+
+/* RepoCard2.scss */
+
+.repo-card-2 {
+  
+  border: 1px solid #505965;
+  border-radius: 6px;
+  padding: 16px;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+  box-shadow: 0 0 10px rgba(86, 76, 76, 0.1);
+  border-left: 0;
+  border-right: 0;
+  font-family: $font;
+  
+
+  &:hover {
+    box-shadow: 0 0 10px rgba(86, 76, 76, 0.1);
+  }
+
+  
+  .repo-card-2-header {
+    margin-bottom: 8px;
+
+    .repo-card-2-name {
+      font-size: 2rem;
+      font-weight: 400;
+      color: #27e5ff;
+      margin: 0;
+    }
+
+    .repo-card-2-description {
+      color: #ebe0f5;
+      font-size: 1.25rem;
+      margin: 8px 0 0;
+    }
+  }
+
+  .repo-card-2-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #586069;
+
+    .repo-card-2-stat {
+      font-size: 1.25rem;
+      color: #ebe0f5;
+      margin-top: 18px;
+    }
+
+    .repo-card-2-language {
+      .repo-card-2-language-badge {
+       
+        color: #fff;
+        padding: 4px 8px;
+        border-radius: 4px;
+        font-size: 1.3rem;
+      }
+    }
+  }
+
+  .repo-card-2-date {
+    font-size: 0.8rem;
+    color: #586069;
+    margin-top: 8px;
+  }
+
+  hr {
+    margin-top: 16px;
+    border: none;
+    
+  }
+}
+
+  

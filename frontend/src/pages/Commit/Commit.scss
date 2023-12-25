@@ -1,0 +1,81 @@
+@import '../../style.scss';
+
+.commit-history-page {
+    //max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-image: $bg;
+    font-family: $font;
+    color: #ffffff;
+    align-items: center;
+    //text-align: center;
+  
+  h1 {
+    color: $textNeon;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  hr {
+    border: 1px solid #ffffff;
+    font-weight: bold;
+    font-size: larger;
+  }
+  
+  }
+  
+  .commit-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .commit-item {
+    border: 1px solid #ffffff;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .commit-info {
+    flex-grow: 1;
+  }
+  
+  .commit-message {
+    color: rgb(255, 255, 255);
+    font-size: 1.75rem;
+    
+    margin-bottom: 8px;
+  }
+  
+  
+  .profile-name {
+    font-size: 14px;
+    color: #ffffff; 
+    font-weight: 300;
+    padding-top: 5px;
+  }
+
+  .commit-text {
+    color: #ffffff;
+  }
+
+  .message {
+    color:#ffffff;
+  }
+
+  // .class1 {
+  //   border: b;
+  //   border: gray-200;
+  //   py: 4;
+  // }
+
+//   <li key={commit.id} className="border-b border-gray-200 py-4">
+//   <div className="flex items-center mb-2">
+//     <div className="w-4 h-4 bg-green-500 rounded-full mr-2"></div>
+//     <span className="text-gray-600 text-sm">{commit.date}</span>
+//   </div>
+//   <p className="text-lg font-semibold mb-1">{commit.message}</p>
+//   <p className="text-sm text-gray-700">Author: {commit.author}</p>
+// </li>
+

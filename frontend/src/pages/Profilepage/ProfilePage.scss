@@ -1,0 +1,63 @@
+@import "../../style.scss";
+
+.box {
+  display: flex;
+  gap: 18rem;
+  background-image: $bg;
+  height: 50rem;
+}
+.user-content {
+  display: flex;
+  // align-items: center;
+  margin-top: 30px;
+  //background-image: $bg;
+  position: relative;
+}
+
+.left-content {
+  flex: 1;
+}
+
+.repo-content {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  flex-direction: column;
+}
+
+.search-and-button-container {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.reposearch-container {
+  display: flex;
+  align-items: flex-start;
+  margin-right: 10px;
+}
+
+.reposearch-bar {
+  width: 800px;
+  height: 40px;
+  // padding: 10px;
+  border: 2px solid $textSoft;
+  border-radius: 20px;
+  background-color: transparent;
+  font-family: $font;
+  font-size: 20px;
+  color: $textBasic;
+}
+
+.button {
+  width: 80px;
+  height: 60px;
+  background-color: #2ce05c;
+  font-family: $font;
+  font-size: 20px;
+  font-weight: bold;
+  color: $textBasic;
+  padding: 10px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}

@@ -1,0 +1,91 @@
+@import '../../style.scss';
+
+.profile-card {
+  width: 600px;
+  height: 600px;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 20px;
+  padding-top: 80px;
+  padding-right: 120px;
+}
+
+.profile-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.profile-picture {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+}
+
+.profile-name {
+  font-family: $font;
+  color: $textBasic;
+  font-size: 35px;
+  font-weight: bold;
+  padding-top: 30px;
+
+  span{
+    font-size: 35px;
+    color: white;
+  }
+}
+
+.profile-username {
+  font-family: $font;
+  font-size: 25px;
+  color: $textSoft;
+  text-align: start;
+  padding-right: 195px;
+}
+
+.profile-card-stats {
+  display: flex;
+  // justify-content:space-around;
+  margin-top: 20px;
+  margin-left: 60px;
+  // padding-right: 120px;
+
+}
+
+.profile-card-stat1 {
+  text-align: center;
+  font-family: $font;
+
+}
+
+.profile-card-stat1 span {
+  font-size: 20px;
+  color: $textSoft;
+}
+
+.profile-card-stat1 span span {
+    font-size: 20px;
+    color: $textBasic;
+    font-weight: bold;
+    padding-left: 70px;
+}
+
+.profile-card-stat2 {
+    text-align: center;
+    font-family: $font;
+  
+  }
+  
+  .profile-card-stat2 span {
+    font-size: 20px;
+    color: $textSoft;
+  }
+  
+  .profile-card-stat2 span span {
+      font-size: 20px;
+      color: $textBasic;
+      font-weight: bold;
+      padding-left: 75px;
+  }

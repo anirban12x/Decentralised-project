@@ -1,0 +1,125 @@
+@import '../../style.scss';
+
+
+.home-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-image: $bg;
+  height: 48rem;
+}
+.left-content {
+  flex: 1;
+  margin-left: 100px;
+}
+
+.maintext {
+  font-family: $font;
+  font-size: 64px;
+  color: $textBasic;
+}
+
+.subtext {
+  display: flex;
+  flex-direction: column;
+  font-family: $font;
+  font-size: 64px;
+  font-weight: bold;
+  color: $textNeon;
+}
+
+.description {
+  font-family: $font;
+  font-size: 20px;
+  color: $textSoft;
+}
+
+.btn-container {
+  margin-top: 20px;
+}
+
+.placeholder {
+  width: 400px;
+  height: 50px;
+  margin-bottom: 10px;
+  border: 2px solid $textNeon;
+  border-radius: 10px;
+  font-size: 20px;
+  color: $textSoft;
+  padding: 8px 10px; 
+}
+
+.input-field {
+  width: 400px;
+  height: 50px;
+  background-color: transparent;
+  margin-bottom: 10px;
+  border: 2px solid $textNeon;
+  border-radius: 10px;
+  font-size: 20px;
+  color: $textBasic;
+  padding: 8px 10px;
+  }
+  
+
+.signin-text {
+  margin-top: 10px;
+  font-family: $font;
+  font-size: 18px;
+  color: $textSoft
+}
+
+.signin-text a {
+  color: #008be7; 
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.signin-text a:hover {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 5px;
+  height: 50px;
+  width: 200px;
+  background-color: $textNeon;
+  color: $bg;
+  border: none;
+  border-radius: 5px;
+  font-family: $font;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-image: linear-gradient(121deg, #2E005C 37.02%, #7640AB 80.02%);
+}
+.btn[disabled] {
+  opacity: 0.5; 
+  cursor: not-allowed;
+}
+
+.btn:hover:not([disabled]) {
+  background-image: linear-gradient(121deg, #2E005C 37.02%, #7640AB 80.02%);
+}
+
+.right-content {
+  flex: 1 1;
+  margin-right: 100px;
+}
+
+.sign-in{
+  background-color: $bg;
+}
+
