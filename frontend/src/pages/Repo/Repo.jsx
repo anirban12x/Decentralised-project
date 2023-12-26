@@ -37,10 +37,10 @@ const Repo = () => {
       try {
         await window.eth_requestAccounts;
         const accounts = await web3.eth.getAccounts();
-        const commits = await contract.methods.getAllCommits(repoName).call({ from: accounts[4] });
+        const commits = await contract.methods.getAllCommits(repoName).call({ from: accounts[0] });
 
         
-        const isOwner = await contract.methods.isOwner(profileName).call({ from: accounts[4] });
+        const isOwner = await contract.methods.isOwner(profileName).call({ from: accounts[0] });
         setProfileOwner(isOwner);
 
         const latestCommit = commits.length > 0 ? commits[commits.length - 1] : null;
@@ -207,7 +207,8 @@ const Repo = () => {
               <thead>
                 <tr>
                   <th>{profileName}</th>
-                  <th></th>
+                  {/* <th>anirban12</th> */}
+                  <th>0x2cb4</th>
                   <th>
                     <Link
                       to={{
@@ -215,15 +216,17 @@ const Repo = () => {
                     >Commits</Link></th>
                 </tr>
               </thead>
-              <tbody>
-                {path.map((path, index) => (
-                  <tr key={index}>
-                    <td>{path}</td>
-                    <td>{commit}</td>
-                    <td>2 days ago</td>
-                  </tr>
-                ))}
-              </tbody>
+              {/* <tbody>
+                {/* {path.map((path, index) => ( */}
+                  {/* <tr key={index}> */}
+                    {/* <td>{path}</td> */}
+                    {/* <td>{profileName}</td> */}
+                    {/* <td>{commit}</td> */}
+                    {/* <td>{repoName}</td>
+                    <td>2 days ago</td> */}
+                  {/* </tr> */}
+                {/* ))} */}
+              {/* </tbody> */} */
             </table>
           </div>
           <div className="readme-container">
@@ -270,7 +273,7 @@ const Repo = () => {
                   </div>
                 </div>
                 <div className="commit-section">
-                  <input type="text" value={inputValue}
+                  <input type="text" value={inputValue}       
                     onChange={handleInputChange} id="commitMessage" placeholder="Type your commit message" />
                   <button onClick={handleSubmit} id="submitBtn" 
                     disabled={selectedFiles.length===0 ||!inputValue.trim()} >Submit</button>

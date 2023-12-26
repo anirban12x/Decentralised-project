@@ -38,9 +38,9 @@ $light-bg: #f6f8fa;
 
 th a {
   text-decoration: none;
-  color: #9dacbd;
+  color: $textNeon;
   font-weight: 500;
-  background-color: #414666;
+  //background-color: #414666;
   padding: 8px 12px;
   cursor: pointer;
 }
@@ -162,7 +162,7 @@ th a:hover {
     margin-bottom: 10px;
     border: 1px solid $secondary-color;
     border-radius: 5px;
-    color: #f6f8fa;
+    color: #000000;
     font-family: $font;
    
   }
@@ -243,7 +243,7 @@ option {
 
 .files-list {
   table {
-    width: 60%;
+    width: 35%;
     border-collapse: collapse;
     margin-bottom: 10px;
     border-radius: 20px;
@@ -342,3 +342,4 @@ option {
 .add-commit {
   font-family: $font;
 }
+

@@ -13,11 +13,11 @@ const ProfileCard = ({profilename}) => {
       <div className="profile-card-stats">
         <div className="profile-card-stat1">
           {/* {followers} */}
-          <span><span>258 </span>Followers</span>
+          <span><span>0 </span>Followers</span>
         </div>
         <div className="profile-card-stat2">
           {/* {followings} */}
-          <span><span>23 </span>Following</span>
+          <span><span>0 </span>Following</span>
         </div>
       </div>
     </div>
